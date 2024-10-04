@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WEB1 - JavaScript </title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0px;
+            /* padding: 20px; */
+        }
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+        }
+
+        ol {
+            border-right: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        #grid {
+            /* border: 5px solid pink; */
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            border-bottom: 1px solid gray;
+        }
+
+        #article {
+            /* border-left: 1px dotted gray; */
+            padding: 10px;
+        }
+        a:hover{
+            color: red;
+        }
+        @media(max-width :800px) {
+            #grid {
+                display: block;
+                border-bottom: none;
+            }
+
+            #grid ol {
+                border-right: none;
+                text-align: center;
+            }
+
+            h1 {
+                border-bottom: none;
+            }
+            h2 {
+                border-bottom: none;
+                color: red;
+            }
+            p{
+                font-size: 12px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="index.html">이상현</a></h1>
+    <div id="grid">
+
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+
+        <div id="article">
+            <h2>JavaScript 무엇인가?</h2>
+            <p style="margin-top: 40px;">
+                JavaScript (/ˈdʒɑːvəskrɪpt/),[10] often abbreviated JS, is a programming language that is one of
+                the core technologies of the World Wide Web, alongside HTML and CSS.[11] Over 97% of websites
+                use JavaScript on the client side for web page behavior,[12] often incorporating third-party
+                libraries.[13] All major web browsers have a dedicated JavaScript engine to execute
+            </p>
+            <img src="coding.jpg" width="200px">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
