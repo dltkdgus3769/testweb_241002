@@ -21,8 +21,8 @@
                 <input type="file" id="profile-image-input" accept="image/*" onchange="previewImage(event)">
                 
                 <form>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="email" id="email" oninput="pwCheck()" placeholder="Email" required>
+                    <input type="password" id="password" oninput="pwCheck()" placeholder="Password" required>
                     <input type="password" id="confirm-password" placeholder="Confirm Password" required>
                     <button type="submit" onclick="signUp(event)">Sign Up</button>
                 </form>
