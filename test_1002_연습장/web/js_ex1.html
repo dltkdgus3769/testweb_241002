@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("hello world");
+    </script>
+    <h1>JavaScript</h1>
+    <script>
+        document.write(1 + 1);
+    </script>
+    <h1>html</h1>
+    1+1
+    <div>
+        <input type="button" value="hi" onclick="alert('hi')">
+    </div>
+    <input type="text" onchange="alert('change!')">
+
+    <input id="test1" placeholder="Click here, then press down a key." size="40" />
+    <p id="log"></p>
+
+    <script>
+        const input = document.querySelector("#test1");
+        const log = document.getElementById("log");
+
+        input.addEventListener("keydown", logKey);
+
+        function logKey(e) {
+            log.textContent += ` ${e.code}`;
+        }
+
+    </script>
+    <input type="text" id="ID" placeholder="ID 입력">
+    <input type="text" id="PW" placeholder="PW 입력">
+    <input type="button" value="입력" onclick="IDPW()">
+    <p id="IdPw"></p>
+    <script>
+        var id = document.getElementById("ID");
+        var pw = document.getElementById("PW");
+
+        function IDPW() {
+            alert("ID:" + id.value + " PW:" + pw.value);
+            //IdPw.textContent = "아이디 : "+ id.value + ", 패스워드 : "+ pw.value ;
+            document.getElementById("IdPw").innerText = "아이디 : " + id.value + ", 패스워드 : " + pw.value;
+        }
+    </script>
+
+    <h1 id="lunch">오늘 점심 메뉴는?</h1>
+    <input type="text" id="menu" placeholder="먹고싶은 메뉴 입력하세요.">
+    <input type="button" value="입력" onclick="showMenu()">
+    <script>
+        var menu = document.getElementById("menu");
+        function showMenu() {
+            document.getElementById("lunch").innerText = "점심 메뉴 : " + menu.value;
+            document.getElementById("menu").value = "";
+        }
+    </script>
+
+
+</body>
+
+</html>
