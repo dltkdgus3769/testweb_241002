@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(coding1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        table{
+            border: 1px solid gray;
+            width: 500px;
+            height: 200px;
+            border-collapse: collapse;
+            color: rgb(223, 248, 0);
+            
+        }
+        tr, td{
+            border: 1px solid red;
+            text-align: center;
+            
+        }
+        .p1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            box-shadow: 15px 20px 10px 10px green;
+            border: 20px groove yellow;
+        
+        }
+    </style>
+</head>
+<body>
+    <select>
+        <optgroup label="a">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+        </optgroup>
+        <optgroup label="b">
+            <option value="1">5</option>
+            <option value="1">6</option>
+            <option value="1">7</option>
+            <option value="1">8</option>
+        </optgroup>
+    </select>
+
+    <input type="text" list="데이터 목록 id">
+    <datalist id="데이터 목록 id">
+        <option value="서버로 넘길값 1">선택 옵션1</option>
+        <option value="서버로 넘길값 2">선택 옵션2</option>
+    </datalist>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td colspan="2">6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>0</td>
+        </tr>
+    </table>
+
+    <p class="p1"></p>
+
+
+</body>
+</html>
