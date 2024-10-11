@@ -12,6 +12,12 @@
             text-decoration: none;
         }
 
+        li:hover {
+            background-color: rgb(245, 192, 229);
+            font-weight: bold;
+            color: blue;
+        }
+
         ul {
             list-style: none;
             width: 500px;
@@ -26,6 +32,7 @@
             padding: 10px 15px;
             font-size: 16px;
             text-align: center;
+
         }
 
         #result {
@@ -34,6 +41,7 @@
             margin: 30px auto;
             border: 2px solid #ccc;
             border-radius: 15px;
+            
         }
 
         p {
@@ -41,18 +49,22 @@
             padding: 10px;
             line-height: 2em;
         }
+
         .wrapper {
-            
-            background-size:contain ;
+
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            
         }
-        #menuName{
+
+        #menuName {
             width: 200px;
             height: 100px;
             margin: 10px auto;
             text-align: center;
             font-weight: bold;
+
         }
     </style>
 </head>
@@ -67,13 +79,13 @@
     <p id="menuName"></p>
 
     <script>
-		function changeimg(menuImg,menu,price) {
-			let result = document.querySelector('#result');
-            let menu1=document.querySelector('#menuName');
-			result.style.backgroundImage = "url('"+menuImg+"')"
-            menu1.innerText = menu +" " +price;
-		}
-	</script>
+        function changeimg(menuImg, menu, price) {
+            let result = document.querySelector('#result');
+            let menu1 = document.querySelector('#menuName');
+            result.style.backgroundImage = "url('" + menuImg + "')"
+            menu1.innerText = menu + " " + price;
+        }
+    </script>
 </body>
 
 </html>
