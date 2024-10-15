@@ -27,21 +27,19 @@ header a {
     text-decoration: none;
     width: 80%;
 }
-header nav{
-    margin: 50px;
-}
+
 .container {
-    max-width: 500px;
+    
+    max-width: 600px;
     margin: 100px auto;
+    background: rgba(255, 255, 255, 0.788);
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .form-group {
@@ -53,49 +51,34 @@ label {
     margin-bottom: 5px;
 }
 
-input {
+input[type="text"],
+textarea,
+input[type="file"] {
     width: 95%;
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.button-group {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
 button {
-    padding: 10px 15px;
+    width: 30%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button[type="submit"] {
-    background-color: #4CAF50;
-    /* Green */
-    color: white;
-}
-
-button[type="button"] {
-    background-color: #f44336;
-    /* Red */
-    color: white;
+    
 }
 
 button:hover {
-    opacity: 0.8;
+    background-color: #218838;
 }
 
-#message {
-    
-    font-size: small;
-    text-align: right;
-    color: red;
+#clear-button {
+    background-color: #dc3545; /* 빨간색 배경 */
 }
-#message.success {
-    color: green;
+
+#clear-button:hover {
+    background-color: #c82333; /* 빨간색 배경 (호버 시) */
 }
