@@ -1,5 +1,10 @@
 body {
-    margin: 0%;
+    margin: 0;
+    
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 100vh; /* 뷰포트의 전체 높이 */
+    background-color: #f0f0f0; /* 배경색 */
 }
 
 header {
@@ -21,13 +26,33 @@ header a {
 
 .container {
     width: 80%;
-
     margin: 50px auto;
-    background-color: #c3e2f559;
+    background-color: #f5c3c359;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
+
+#boardTable tbody {
+    display: block;
+    
+
+}
+
+#boardTable thead,
+#boardTable tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    /* 셀 크기 고정 */
+}
+
+#boardTable tbody tr td {
+    white-space: nowrap;
+    /* 내용이 긴 경우 줄바꿈하지 않고 생략 표시 */
+}
+
+
 
 table {
     border-collapse: collapse;
@@ -35,8 +60,21 @@ table {
 
 }
 
+th {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #000;
+    /* position: sticky; */
+    /* 헤더 고정 */
+    top: 0;
+    /* 스크롤 시 헤더의 위치 */
+    z-index: 10;
+    /* 다른 요소 위에 표시 */
+}
+
 /*이중선 제거*/
-th,td {
+
+td {
     width: 150px;
     height: 50px;
     text-align: center;
@@ -61,4 +99,26 @@ th,td {
     width: 250px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+.pagination {
+    width: 500px;
+    
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+#pageInfo {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.board{
+    margin:20px;
 }
