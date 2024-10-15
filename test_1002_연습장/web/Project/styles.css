@@ -1,0 +1,64 @@
+body {
+    margin: 0%;
+}
+
+header {
+    height: 50px;
+    padding: 1rem;
+    color: white;
+    background: teal;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    width: 80%;
+}
+
+.container {
+    width: 80%;
+
+    margin: 50px auto;
+    background-color: #c3e2f559;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+/*이중선 제거*/
+th,td {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #000;
+
+    vertical-align: top;
+    /* 위 */
+    vertical-align: bottom;
+    /* 아래 */
+    vertical-align: middle;
+    /* 가운데 */
+}
+
+.search-bar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
