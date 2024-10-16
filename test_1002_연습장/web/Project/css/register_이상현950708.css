@@ -31,7 +31,7 @@ header a {
 .container {
     
     max-width: 600px;
-    margin: 100px auto;
+    margin: 10px auto;
     background: rgba(255, 255, 255, 0.788);
     padding: 20px;
     border-radius: 5px;
@@ -81,4 +81,37 @@ button:hover {
 
 #clear-button:hover {
     background-color: #c82333; /* 빨간색 배경 (호버 시) */
+}
+
+.footer {
+    background-color: #333; /* 푸터 배경색 */
+    color: white; /* 푸터 글자색 */
+    position: absolute;
+    left: 0;
+    right: 0; /* 좌우 끝까지 확장 */
+    bottom: 0;
+    text-align: center; /* 중앙 정렬 */
+    
+    
+}
+
+.footer-section {
+    margin-top: 10px;
+    margin-right: 50px; /* 섹션 간 여백 */
+    display: inline-block;
+    height: 80px;
+
+}
+.footer-section img{
+    width : 50px; 
+    margin-top: 10px;
+
+}
+
+.footer-section p{
+    font-size: 10px;
+
+}
+.footer-section h5{
+    margin:0;
 }

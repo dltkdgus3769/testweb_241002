@@ -5,7 +5,7 @@ body {
     /* 수평 중앙 정렬 */
     align-items: center;
     /* 수직 중앙 정렬 */
-    height: 100vh;
+    height: 100%;
     /* 뷰포트의 전체 높이 */
     background-color: #f0f0f0;
     /* 배경색 */
@@ -20,6 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    right: 0;
 }
 
 header a {
@@ -28,11 +29,12 @@ header a {
     width: 80%;
 }
 header nav{
-    margin: 50px;
+    margin: 0px;
+    padding: 50px;
 }
 .container {
     max-width: 500px;
-    margin: 100px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
@@ -98,4 +100,37 @@ button:hover {
 }
 #message.success {
     color: green;
+}
+
+.footer {
+    background-color: #333; /* 푸터 배경색 */
+    color: white; /* 푸터 글자색 */
+    position: absolute;
+    left: 0;
+    right: 0; /* 좌우 끝까지 확장 */
+    bottom: 0;
+    text-align: center; /* 중앙 정렬 */
+    
+    
+}
+
+.footer-section {
+    margin-top: 10px;
+    margin-right: 50px; /* 섹션 간 여백 */
+    display: inline-block;
+    height: 80px;
+
+}
+.footer-section img{
+    width : 50px; 
+    margin-top: 10px;
+
+}
+
+.footer-section p{
+    font-size: 10px;
+
+}
+.footer-section h5{
+    margin:0;
 }
